@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of Lighten hosts
+name: Lighten .well-known Index
+description: Probe results for standard /.well-known/ discovery paths across Lighten
+  hosts. Nothing is published — every path returns 404 (or the SPA HTML fallback on
+  the application host). Recorded as an honest negative result; re-probe on the next
+  enrichment round.
+hosts:
+- host: www.lighten-ai.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    published: false
+  - path: /.well-known/openid-configuration
+    status: 404
+    published: false
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    published: false
+  - path: /.well-known/api-catalog
+    status: 404
+    published: false
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    published: false
+  - path: /llms.txt
+    status: 404
+    published: false
+  - path: /robots.txt
+    status: 200
+    published: true
+    note: Served with 200 but the body is empty — no directives, no sitemap reference.
+  - path: /sitemap.xml
+    status: 404
+    published: false
+- host: app.lighten-ai.com
+  note: Login-gated single-page application. Unmatched paths return the SPA HTML
+    shell with a 200 status, so a 200 here is not evidence that a document is
+    published.
+  paths:
+  - path: /.well-known/security.txt
+    status: 200
+    published: false
+    note: Returns text/html (the SPA shell), not a security.txt document.
+files: []

@@ -1,0 +1,51 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.lighten-ai.com/ (footer compliance badges), https://www.lighten-ai.com/privacy-policy
+name: Lighten Conformance & Compliance
+description: Published standards and compliance claims for Lighten Platforms, Inc.
+  Lighten operates on regulated US clinical data (EHR and claims) for life sciences
+  real-world-evidence use, so its published posture is healthcare-compliance oriented
+  rather than API-protocol oriented. Lighten publishes no public API, so no API
+  protocol conformance (OAuth 2.0, OIDC, FHIR, RFC 9457, pagination, idempotency)
+  can be asserted or derived.
+conformance:
+- id: hipaa
+  conforms: true
+  evidence: HIPAA compliance badge published in the site footer on every page of
+    https://www.lighten-ai.com/. No audit letter, attestation, or trust center page
+    is published to substantiate the badge.
+  confidence: claimed
+- id: soc2
+  conforms: true
+  evidence: SOC 2 compliance badge published in the site footer on every page of
+    https://www.lighten-ai.com/. Badge does not state Type I vs Type II, and no
+    report request flow or trust center is published.
+  confidence: claimed
+- id: rwe-regulatory-expectations
+  conforms: true
+  evidence: 'White paper "Regulatory Expectations for RWE Data Curation from EHR"
+    and case study "Regulatory-Grade EHR Curation for Natural History Study" published
+    at https://www.lighten-ai.com/resources — company states its curation is designed
+    to meet regulatory expectations for real-world evidence from day one.'
+  confidence: claimed
+- id: fhir
+  conforms: false
+  evidence: No FHIR support, profile, or endpoint documented on any public Lighten
+    surface. Lighten ingests EHR data as a service rather than exposing a standards-based
+    clinical data API.
+- id: oauth2
+  conforms: false
+  evidence: No public API and no published OAuth 2.0 authorization server. No
+    /.well-known/oauth-authorization-server on lighten-ai.com (404).
+- id: oidc
+  conforms: false
+  evidence: No published OpenID Provider metadata. /.well-known/openid-configuration
+    on www.lighten-ai.com returns 404.
+- id: rfc9457
+  conforms: false
+  evidence: No public API and no published error catalog, so no application/problem+json
+    usage can be asserted.
+notes: Compliance entries with confidence "claimed" are self-asserted marketing badges
+  captured verbatim from the provider's own site. They are recorded as published
+  claims, not as verified certifications — no certificate, audit report, or third-party
+  trust center was found.
