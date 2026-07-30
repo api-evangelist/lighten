@@ -1,19 +1,48 @@
 aid: lighten
 name: Lighten
-description: Lighten is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Lighten Platforms, Inc. is a San Mateo, California healthcare AI company
+  building an AI-native platform for clinical evidence curation from electronic health
+  record (EHR) data. Its 360° EHR Curation Platform reasons over unstructured clinical
+  notes together with structured records to reconstruct complete patient journeys,
+  applying clinically validated quality assurance at the variable, patient, and cohort
+  level rather than relying on model accuracy metrics alone. On top of that curation
+  layer Lighten delivers Apps & Insights for patient finding and HCP targeting, longitudinal
+  patient journeys, and market intelligence, plus a "Beyond Claims" offering that integrates
+  curated EHR signal with claims data for broader coverage. The company serves life
+  sciences, health systems, data and analytics consultancies, and investors, and was
+  founded by Xinkun Nie, PhD. Lighten publishes no public developer API program, SDKs,
+  or developer documentation as of this profile.'
 url: https://raw.githubusercontent.com/api-evangelist/lighten/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69fa86d2a85c0176fe7cc061/6a03aaf2783824d21503f2ab_lighten-logo.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 8vc
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Life Sciences
+- Artificial Intelligence
+- Electronic Health Records
+- Real World Evidence
+- Clinical Data
+- Data Curation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,32 @@ maintainers:
 common:
 - type: Website
   url: https://lighten-ai.com
+- type: About
+  url: https://www.lighten-ai.com/about-us
+- type: Blog
+  url: https://www.lighten-ai.com/resources
+- type: Support
+  url: https://www.lighten-ai.com/get-in-touch
+- type: Login
+  url: https://app.lighten-ai.com/
+- type: TermsOfService
+  url: https://www.lighten-ai.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.lighten-ai.com/privacy-policy
+- type: Careers
+  url: https://www.lighten-ai.com/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lighten-ai/
+- type: Compliance
+  url: conformance/lighten-conformance.yml
+- type: Conformance
+  url: conformance/lighten-conformance.yml
+- type: DomainSecurity
+  url: security/lighten-domain-security.yml
+- type: LLMsTxt
+  url: llms/lighten-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
