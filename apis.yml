@@ -13,6 +13,17 @@ description: 'Lighten Platforms, Inc. is a San Mateo, California healthcare AI c
   founded by Xinkun Nie, PhD. Lighten publishes no public developer API program, SDKs,
   or developer documentation as of this profile.'
 url: https://raw.githubusercontent.com/api-evangelist/lighten/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
